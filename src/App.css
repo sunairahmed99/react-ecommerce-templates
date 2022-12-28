@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    
+}
+
+
+
+
+.container{
+    max-width: 94%;
+    margin: auto;
+}
+
+body{
+    max-width: 100%;
+}
+
+
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.c-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.f-flex{
+    display: flex;
+}

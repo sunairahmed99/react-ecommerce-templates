@@ -1,0 +1,161 @@
+.home{
+    display: flex;
+}
+.content{
+    width: 70%;
+}
+.bor{
+    border: 2px solid black;
+}
+
+
+
+
+.cat{
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 520px;
+    box-shadow: 10px 10px 8px 10px #888888;
+    margin: 20px 0;
+}
+
+.catitems img{
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+    margin-left: 90px;
+}
+.catitems:hover{
+    background-color: pink;
+    cursor: pointer;
+}
+.catitems span{
+    margin-left: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+
+}
+.catitems{
+    display: flex;
+    align-items: center;
+    padding: 15px 0px ;
+}
+
+.slide{
+    display: flex !important;
+    height: 500px;
+}
+
+.slide .left{
+    width: 70%;
+    margin-left: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.slide .left{
+    margin-left: 20px;
+}
+.slide .left p{
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+.slide .btn{
+    padding: 8px 10px;
+    background-color: red;
+    color: white;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    width: fit-content;
+    margin-top: 20px;
+}
+.slide .right{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slide .right img{
+    object-fit: contain;
+    height: 20rem;
+    width: 16rem;
+    padding-top: 40px;
+}
+
+
+@media screen and (max-width: 850px){
+    .cat{
+        display: none;
+    }
+    .content{
+        width: 100%;
+    }
+    .slide .right img{
+        object-fit: contain;
+        height: 20rem;
+        width: 16rem;
+        padding-top: 10px;
+        margin-top: -20px;
+    }
+}
+
+@media screen and  (max-width: 650px) {
+
+    .content{
+        width: 100%;
+    }
+
+    .slide{
+        display: flex !important;
+        height: 300px;
+        margin: 0;
+        padding: 0;
+        margin-top: -2rem;
+    }
+    .slider{
+        max-width: 93%;
+        border: none;
+
+
+    }
+    
+    .slide .left{
+        max-width: 65%;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .slide .left h1{
+        font-size: 1.5rem;
+        margin-left: 1rem;
+    }
+   
+    .slide .left p{
+       display: none;
+    }
+    .slide .right{
+        max-width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 5px;
+    }
+    .slide .right img{
+        object-fit: contain;
+        height: 10rem;
+        width: 12rem;
+        padding-top: 40px;
+        padding-right: 20px;
+    }
+
+    .slide .btn{
+        padding: 8px 15px;
+        font-size: 1.2rem;
+        margin-top: 10px;
+        margin-left: -3rem;
+        }
+    
+
+}

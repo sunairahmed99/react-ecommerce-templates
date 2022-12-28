@@ -1,0 +1,130 @@
+.cart-items{
+    width: 60%;
+    display: flex;
+    position: relative;
+    margin: 20px 0px;
+    cursor: pointer;
+    flex-direction: column;
+}
+.item1{
+    width: 100%;
+    display: flex;
+    box-shadow: 3px 3px 5px 2px #888888;
+    position: relative;
+    margin: 20px 0px;
+    cursor: pointer;
+}
+.main{
+    margin-top: 3rem;
+}
+
+.cart-items img{
+    width: 12rem;
+    height: 12rem;
+}
+.cart-items .icons{
+    position: absolute;
+    bottom: 3px;
+    right: 10px;
+}
+.cart-items  button{
+    margin: 20px;
+    background-color: white;
+    color: red;
+    font-size: 1.3rem;
+    padding: 6px 8px;
+    text-align: center;
+    border: 1px solid wheat;
+    border-radius: 8px;
+}
+.cart-items .cancel{
+    position: absolute;
+    right: 0;
+}
+.cart-items .txt{
+    padding-top: 1rem;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.item-price{
+    width: 35%;
+    margin-top: 3rem;
+    height: 8rem;
+    box-shadow: 3px 3px 5px 2px #888888;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.item-price h1{
+    padding: 10px 0;
+    color: red;
+}
+.item-price h4{
+    padding: 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+}
+.item-price h4>:nth-child(2){
+    color: red;
+}
+
+@media screen and (max-width: 820px){
+    .cart-items{
+    width: 100%;
+    display: flex;
+    position: relative;
+    margin: 5px 0px;
+    cursor: pointer;
+    flex-direction: column;
+    }
+    .item1{
+        width: 100%;
+        display: flex;
+        box-shadow: 3px 3px 5px 2px #888888;
+        position: relative;
+        margin: 10px 0px;
+        cursor: pointer;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .cart-items img{
+        width: 4rem;
+        height: 6rem;
+    }
+    .cart-items .txt{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        font-size: 10px;
+        margin-right: 30px;
+    }
+    .cart-items .icons{
+        position: absolute;
+        right: -6px;
+        bottom: -15px;
+    }
+    .cart-items  button{
+        font-size: 1.1rem;
+        text-align: center;
+        border: 1px solid wheat;
+        border-radius: 6px;
+    }
+    .cart-items .cancel{
+        position: absolute;
+        right: -10px;
+        top: -15px;
+    }
+    .item-price{
+        width: 100%;
+        margin-top: 3rem;
+        height: 8rem;
+        box-shadow: 3px 3px 5px 2px #888888;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+}

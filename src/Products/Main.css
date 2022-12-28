@@ -1,0 +1,164 @@
+.MainPro{
+    margin-top: 5rem;
+
+}
+.maindiv{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.pcat{
+    width: 23%;
+    box-shadow: 10px 10px 8px 10px #888888;
+    height: 41rem;
+}
+.pbrands{
+    margin: 1rem 2rem ;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+}
+.pbrands>:nth-child(1){
+    font-weight: bold;
+    color: black;
+}
+.pbrands>:nth-child(2){
+    line-height: 30px;
+    font-weight: bold;
+}
+.pbrands>:nth-child(3){
+    color: grey;
+    font-weight: bold;
+}
+.pbox span{
+    font-size: 1.2rem;
+    padding: 1rem;
+    font-weight: bold;
+}
+.pbox img{
+    margin-left: 1rem;
+}
+
+.ppp{
+    width: 73%;
+}
+.ptxt h1 span{
+    color: black !important;
+    font-weight: bold !important;
+    font-size: 2.3rem !important;
+}
+
+.pbox{
+    display: flex;
+    align-items: center;
+}
+
+.pbox img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.spro{
+    width: 18rem;
+    box-shadow: 5px 5px 3px 1px #888888;
+    padding: 10px 0px 24px 0px;
+    position: relative;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+.spro:hover .pheart{
+    opacity: 1;
+}
+.spro .simg img{
+    width: 20rem;
+}
+.sbox .poff{
+    color: white;
+    padding: 4px 16px;
+    background-color: red;
+    width: fit-content;
+    border-radius: .8rem;
+    margin: 5px;
+}
+
+.sbox img{
+    width: 100%;
+    height: 15rem;
+    
+}
+.sbox .ptxt>:nth-child(1){
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 5px 12px;
+}
+.sbox .ptxt>:nth-child(2){
+    margin: 3px 5px;
+    color: orange;
+    padding: 0px 5px;
+}
+.sbox .ptxt>:nth-child(2) span{
+    padding: 0px 2px;
+}
+.sbox .ptxt>:nth-child(3){
+    color: red;
+    margin: 0px 12px;
+    font-weight: bold;
+}
+.sbox .picon{
+    position: absolute;
+    right: 20px;
+    font-size: 1.4rem;
+    padding: 2px 6px;
+    box-shadow: 1px 1px 1px 1px #888888;
+    bottom: 15px;
+    color: red;
+    font-weight: bold;
+}
+.sbox .picon:hover{
+    background: red;
+    color: white;
+}
+.sbox .pheart{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    opacity: 0;
+}
+.sbox .pheart>:nth-child(1){
+    padding: 3px 15px;
+    border-radius: .6rem;
+    color: white;
+    background-color: lightslategrey;
+}
+.sbox .pheart>:nth-child(2){
+    border: 1px solid black;
+}
+.sbox .pheart>:nth-child(2) i{
+    color: red;
+    font-size: 1.4rem;
+    padding-left: 7px;
+}
+.shopproduct{
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1200px){
+    .pcat{
+        display: none;
+    }
+    .ppp{
+        width: 100%;
+    }
+    
+    .spro{
+        width: 100%;
+    }
+}

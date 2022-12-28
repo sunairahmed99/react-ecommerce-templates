@@ -1,0 +1,88 @@
+.flashdeals{
+    margin-top: 30px;
+}
+.flashtxt{
+    display: flex;
+    align-items: center;
+}
+.flashtxt i{
+    font-size: 1.4rem;
+    color: red;
+    margin-top: 10px;
+}
+.flashtxt span{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.flashbox{
+    position: relative;
+    margin-top: 15px;
+}
+.flashbox:hover .btxt{
+    opacity: 1;
+}
+
+.flashbox .mtop{
+    padding: 12px 15px;
+    margin: 0px 5px;
+    box-shadow: 5px 5px 3px #888888;
+    
+}
+.flashbox .img span{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.flashbox .btxt{
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    display: flex;
+    gap: .6rem;
+    flex-direction: column;
+    opacity: 0;
+    transition: .5s;
+    color: black;
+}
+.flashbox .btxt span{
+    padding: 2px 12px;
+    background-color: grey;
+    color: white;
+    border-radius: 40%;
+}
+.flashbox .btxt i{
+    color: white;
+    font-size: 1.2rem;
+    padding-left: 3px;
+}
+.flashbox .innertxt .txt span{
+    font-size: 1.3rem;
+}
+.flashbox .innertxt .star{
+    margin-top: 10px;
+    display: flex;
+    gap: .5rem;
+}
+.flashbox .innertxt .star span i{
+    font-size: 1.3rem;
+}
+.flashbox .innertxt .price{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    color: red;
+}
+.flashbox .innertxt .price button{
+    background-color: black;
+    border: none;
+    outline: none;
+    color: red;
+    font-size: 1.3rem;
+    padding: 4px 7px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+.flashbox .innertxt .price button:hover{
+    background-color: blue;
+    color: white;
+}

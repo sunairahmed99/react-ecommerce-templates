@@ -1,0 +1,261 @@
+.combine{
+    box-shadow: 10px 10px 8px #888888;
+    height: 12rem;
+
+}
+
+
+.head{
+    background-color: blue;
+    padding: 20px 0;
+    max-width: 100%;
+}
+.head .left span{
+    color: white;
+}
+.head .left >:nth-child(1){
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.head .left >:nth-child(2){
+    padding-left: 4px;
+    font-size: 1.2rem;
+}
+.head .left >:nth-child(3){
+    padding-left: 20px;
+}
+.head .left >:nth-child(4){
+    font-size: 1.4rem;
+    padding-left: 4px;
+}
+.head .right{
+    padding-right: 20px;
+    color: antiquewhite;
+}
+.head .right span{
+    padding-right: 20px;
+    font-size: 1.3rem;
+}
+
+.search{
+    max-width: 100%;
+    padding: 15px 0;
+}
+
+.search .logo{
+    width: 15%;
+}
+.search .search-box{
+    width: 60%;
+    border: 2px solid black;
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+}
+.search .search-box i{
+    font-size: 1.2rem;
+    padding: 0px 15px;
+}
+.search .search-box input{
+    width: 75%;
+    padding: 10px 10px;
+    font-size: 1.2rem;
+    border: none;
+}
+.search .search-box span{
+    width: 15%;
+    padding-left: 15px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.search .icons{
+    position: relative;
+}
+
+.search .icons i{
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+    padding: 15px;
+    background-color: lightslategray;
+    color: white;
+    margin-left: 20px;
+    border-radius: 30%;
+}
+.search .icons .txt{
+    color: red;
+    font-size: 1.2rem;
+    font-weight: 600;
+    position: absolute;
+    top: -2px;
+    right: 6px;
+}
+
+.navbar{
+    padding-top: 3rem;
+}
+.category{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.navbar .list{
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.navbar .items ul{
+    margin-top: 19px;
+    padding-bottom: 0;
+}
+.navbar .list a{
+    transform: .5s;
+}
+.navbar .list a:hover{
+    color: pink;
+    transform: .5s;
+}
+.navbar .show{
+    display: none;  
+}
+.lnone{
+    display: none;
+}
+.show{
+    display: none;
+}
+.navbar .icategory{
+    display: flex;
+    padding: 10px;
+    background-color: grey;
+    opacity: 0.6;
+    border-radius: .5rem;
+    margin-top: 12px;
+}
+.navbar .icategory i{
+    font-size: 1.2rem;
+    color: red;
+    margin-top: 2px;
+    font-weight: bold;
+}
+.navbar .icategory span{
+    margin-top: 4px;
+}
+
+
+@media screen and (max-width: 830px){
+
+    .head{
+        display: none;
+    }
+
+
+    .navbar .list{
+        display: none
+    }
+    .navbar .mlist{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40%;
+        display: block;
+        box-shadow: 10px 10px 8px #888888;
+        height: 100vh;
+        z-index: 999;
+        background-color: black;
+        color: white;
+    }
+    .navbar .mlist li a{
+        color: white;
+        font-size: 1.4rem;
+    }
+    .navbar .mlist li{
+        padding: 1rem 3rem;
+        margin-top: 2rem;
+    }
+    .navbar .show{
+        display: initial;
+    }
+    .navbar .block, .show{
+     padding: 15px;
+     background-color: black;
+    color: white;
+    font-size: 1.8rem;
+    border-radius: .4rem;
+    }
+
+    .search .logo{
+        width: 10%;
+    }
+    .search .search-box{
+        width: 50%;
+    }
+    .search .search-box i{
+        font-size: 1.2rem;
+        padding: 0px 15px;
+    }
+    .search .search-box input{
+        width: 60%;
+        font-size: 1.1rem;
+    }
+    .search .search-box span{
+        width: 35%;
+        padding-left: 12px;
+        font-size: 1rem;
+    }
+
+    .items .lbox{
+        width: 100%;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .items .lbox i{
+        width: 30%;
+        padding: 0px 20px;
+        font-size: 1.4rem;
+        color: black;
+    }
+    .items .lbox input{
+        width: 60%;
+        padding: 10px;
+        border: none;
+        outline: none;
+    }
+
+    @media screen and (max-width: 630px){
+        .search .search-box{
+            display: none;
+        }
+
+        .navbar .mlist{
+            width: 60%;
+            
+        }
+        .navbar .mlist li a{
+            color: white;
+            font-size: 1.3rem;
+        }
+        .navbar .mlist li{
+            padding: 1.1rem 2rem;
+            margin-top: 1rem;
+    }
+        .mmargin{
+            margin-top: 15px;
+        
+        }
+
+    }
+}
+    
+
+
+
+
+
+
+
